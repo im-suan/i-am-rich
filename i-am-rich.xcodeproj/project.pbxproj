@@ -13,6 +13,7 @@
 		BC64453A23D9AC490038DCE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC64453823D9AC490038DCE4 /* Main.storyboard */; };
 		BC64453C23D9AC4A0038DCE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC64453B23D9AC4A0038DCE4 /* Assets.xcassets */; };
 		BC64453F23D9AC4A0038DCE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC64453D23D9AC4A0038DCE4 /* LaunchScreen.storyboard */; };
+		BC64456723DAC2CD0038DCE4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = BC64456623DAC2CD0038DCE4 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		BC64453B23D9AC4A0038DCE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC64453E23D9AC4A0038DCE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BC64454023D9AC4A0038DCE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC64456623DAC2CD0038DCE4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		BC64452623D9AC490038DCE4 = {
 			isa = PBXGroup;
 			children = (
+				BC64456623DAC2CD0038DCE4 /* README.md */,
 				BC64453123D9AC490038DCE4 /* i-am-rich */,
 				BC64453023D9AC490038DCE4 /* Products */,
 			);
@@ -127,6 +130,7 @@
 			files = (
 				BC64453F23D9AC4A0038DCE4 /* LaunchScreen.storyboard in Resources */,
 				BC64453C23D9AC4A0038DCE4 /* Assets.xcassets in Resources */,
+				BC64456723DAC2CD0038DCE4 /* README.md in Resources */,
 				BC64453A23D9AC490038DCE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,12 +289,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KBLKJ3UH;
 				INFOPLIST_FILE = "i-am-rich/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "suan.learn.i-am-rich";
+				PRODUCT_BUNDLE_IDENTIFIER = suan.learn.iamrich;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -302,12 +308,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G3KBLKJ3UH;
 				INFOPLIST_FILE = "i-am-rich/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "suan.learn.i-am-rich";
+				PRODUCT_BUNDLE_IDENTIFIER = suan.learn.iamrich;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
