@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    let eggTimers = ["Soft": 5, "Medium": 7, "Hard": 12]
+    let eggTimers = ["Soft": 5*60, "Medium": 7*60, "Hard": 12*60]
     var totalTime = 0
     var remainedTime = 0
     var time = Timer()
@@ -24,7 +24,7 @@ class ViewController: UIViewController {
         
         totalTime = eggTimers[sender.currentTitle!]!
         remainedTime = totalTime
-        countDownTimer.text = "START"
+        countDownTimer.text = sender.currentTitle!
         time = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
         
     }
