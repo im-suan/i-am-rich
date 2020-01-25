@@ -1,6 +1,5 @@
-# i-am-rich
-This is my first IOS program namely *"I Am Rich"*.
-
+# WELCOME TO SUAN'S NEST
+This is my learning ios project.
 Now is on Tet Holiday 2020.
 Happy new year! 
 
@@ -9,6 +8,11 @@ Enjoy the whole days of holiday with learning something new.
 **LET'S SUNSHINE THIS YEAR! (sun)**
 
 ---
+# TINY APPS:
+1. i-am-rich
+2. xylophone
+3. egg-timer
+
 # NOTE
 ## Cool Tools for designing:
 - Generate app icons:  [App Icon Generator](https://appicon.co/)
