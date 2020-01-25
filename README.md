@@ -13,6 +13,7 @@ Enjoy the whole days of holiday with learning something new.
 2. xylophone
 3. egg-timer
 4. destini-story
+5. bmi-calculator
 
 # NOTE
 ## Cool Tools for designing:
