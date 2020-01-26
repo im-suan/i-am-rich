@@ -14,6 +14,8 @@
 		BCF7C2F423DC7D4000AC79C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BCF7C2F223DC7D4000AC79C0 /* LaunchScreen.storyboard */; };
 		BCF7C30423DC8DBE00AC79C0 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7C30323DC8DBE00AC79C0 /* ResultViewController.swift */; };
 		BCF7C30823DC908A00AC79C0 /* CalculateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7C30723DC908A00AC79C0 /* CalculateViewController.swift */; };
+		BCF7C30C23DD350600AC79C0 /* CalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7C30B23DD350600AC79C0 /* CalculatorBrain.swift */; };
+		BCF7C30E23DD3A2500AC79C0 /* BMI.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF7C30D23DD3A2500AC79C0 /* BMI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		BCF7C2F523DC7D4000AC79C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BCF7C30323DC8DBE00AC79C0 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		BCF7C30723DC908A00AC79C0 /* CalculateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalculateViewController.swift; sourceTree = "<group>"; };
+		BCF7C30B23DD350600AC79C0 /* CalculatorBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorBrain.swift; sourceTree = "<group>"; };
+		BCF7C30D23DD3A2500AC79C0 /* BMI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +77,8 @@
 		BCF7C2FB23DC7D4B00AC79C0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BCF7C30B23DD350600AC79C0 /* CalculatorBrain.swift */,
+				BCF7C30D23DD3A2500AC79C0 /* BMI.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -168,6 +174,8 @@
 				BCF7C2E823DC7D4000AC79C0 /* AppDelegate.swift in Sources */,
 				BCF7C30823DC908A00AC79C0 /* CalculateViewController.swift in Sources */,
 				BCF7C2EA23DC7D4000AC79C0 /* SceneDelegate.swift in Sources */,
+				BCF7C30C23DD350600AC79C0 /* CalculatorBrain.swift in Sources */,
+				BCF7C30E23DD3A2500AC79C0 /* BMI.swift in Sources */,
 				BCF7C30423DC8DBE00AC79C0 /* ResultViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
