@@ -14,6 +14,7 @@ Enjoy the whole days of holiday with learning something new.
 3. egg-timer
 4. destini-story
 5. bmi-calculator
+6. tispy
 
 # NOTE
 ## Cool Tools for designing:
