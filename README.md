@@ -15,6 +15,7 @@ Enjoy the whole days of holiday with learning something new.
 4. destini-story
 5. bmi-calculator
 6. tispy
+7. clima
 
 # NOTE
 ## Cool Tools for designing:
