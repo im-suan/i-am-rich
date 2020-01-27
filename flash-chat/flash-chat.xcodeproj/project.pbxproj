@@ -136,7 +136,6 @@
 				BCB768FF23DE791E00E091F9 /* Sources */,
 				BCB7690023DE791E00E091F9 /* Frameworks */,
 				BCB7690123DE791E00E091F9 /* Resources */,
-				A47D53A9D0AE7A4E64CE7353 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -194,23 +193,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		A47D53A9D0AE7A4E64CE7353 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-flash-chat/Pods-flash-chat-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-flash-chat/Pods-flash-chat-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-flash-chat/Pods-flash-chat-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		D72AB615CCC4A36C9AC3ED9D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
