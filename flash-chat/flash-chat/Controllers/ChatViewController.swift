@@ -23,6 +23,8 @@ class ChatViewController: UIViewController {
         
         tableView.dataSource = self
         tableView.delegate = self
+        messageTextfield.delegate = self
+        
         title = K.appName
         navigationItem.hidesBackButton = true
         
@@ -55,7 +57,12 @@ class ChatViewController: UIViewController {
     
     @IBAction func sendPressed(_ sender: UIButton) {
         if let messageBody = messageTextfield.text, let messageSender = Auth.auth().currentUser?.email {
-            db.collection(K.FStore.collectionName).addDocument(data: [K.FStore.senderField: messageSender, K.FStore.bodyField: messageBody]) { (error) in
+                messageTextfield.endEditing(true)
+            
+                db.collection(K.FStore.collectionName).addDocument(data: [
+                K.FStore.senderField: messageSender,
+                K.FStore.bodyField: messageBody,
+                K.FStore.dateField: Date().timeIntervalSince1970]) { (error) in
                 if let e = error {
                     print("There was an issue saving data to firestore, \(e)")
                 } else {
@@ -63,7 +70,6 @@ class ChatViewController: UIViewController {
                 }
             }
         }
-            
     }
     
     @IBAction func logOutPressed(_ sender: Any) {
@@ -73,7 +79,6 @@ class ChatViewController: UIViewController {
         } catch let signOutError as NSError {
           print ("Error signing out: %@", signOutError)
         }
-          
     }
 }
 
@@ -94,5 +99,20 @@ extension ChatViewController:UITableViewDataSource {
 extension ChatViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(indexPath.row)
+    }
+}
+
+//MARK: - UITextFieldDelegate
+extension ChatViewController : UITextFieldDelegate {
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {
+            return true
+        } else {
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        messageTextfield.text = ""
     }
 }
