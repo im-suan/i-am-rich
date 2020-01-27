@@ -57,11 +57,9 @@ class ChatViewController: UIViewController {
         }
     }
     
-    @IBAction func sendPressed(_ sender: UIButton) {
+    func saveMessage() {
         if let messageBody = messageTextfield.text, let messageSender = Auth.auth().currentUser?.email {
-                messageTextfield.endEditing(true)
-            
-                db.collection(K.FStore.collectionName).addDocument(data: [
+            db.collection(K.FStore.collectionName).addDocument(data: [
                 K.FStore.senderField: messageSender,
                 K.FStore.bodyField: messageBody,
                 K.FStore.dateField: Date().timeIntervalSince1970]) { (error) in
@@ -72,6 +70,11 @@ class ChatViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    @IBAction func sendPressed(_ sender: UIButton) {
+        //action is handled by textFieldDidEditing
+        messageTextfield.endEditing(true)
     }
     
     @IBAction func logOutPressed(_ sender: Any) {
@@ -106,6 +109,11 @@ extension ChatViewController : UITableViewDelegate {
 
 //MARK: - UITextFieldDelegate
 extension ChatViewController : UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        messageTextfield.endEditing(true)
+        return true
+    }
+    
     func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
         if textField.text != "" {
             return true
@@ -115,6 +123,7 @@ extension ChatViewController : UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
+        saveMessage()
         messageTextfield.text = ""
     }
 }
