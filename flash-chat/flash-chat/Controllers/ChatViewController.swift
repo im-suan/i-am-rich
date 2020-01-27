@@ -110,19 +110,13 @@ extension ChatViewController : UITableViewDelegate {
 //MARK: - UITextFieldDelegate
 extension ChatViewController : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        print("should return")
         messageTextfield.endEditing(true)
         return true
     }
     
-    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
-        if textField.text != "" {
-            return true
-        } else {
-            return false
-        }
-    }
-    
     func textFieldDidEndEditing(_ textField: UITextField) {
+        print("did end editing")
         saveMessage()
         messageTextfield.text = ""
     }
