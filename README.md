@@ -10,15 +10,16 @@ Enjoy the whole days of holiday with learning something new.
 ---
 # TINY APPS:
 1. i-am-rich
-2. xylophone
-3. egg-timer
-4. destini-story
-5. bmi-calculator
-6. tispy
-7. clima
-8. byte-coin
-9. flash-chat
-10. SuanCard
+2. xylophone (a music instrument)
+3. egg-timer (a countdown timer for egg levels)
+4. destini-story (a tell story)
+5. bmi-calculator (like its name)
+6. tispy (a calculator to calculate tip money)
+7. clima (show weather info at a city)
+8. byte-coin (show bitcoin price)
+9. flash-chat (an chat application)
+10. SuanCard (Suan's Card)
+11. h4x0r-news (hacker news)
 
 # NOTE
 ## Cool Tools for designing:
