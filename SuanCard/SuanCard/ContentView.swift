@@ -38,6 +38,9 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        Group {
+            ContentView().colorScheme(.light)
+            ContentView().colorScheme(.dark)
+        }
     }
 }

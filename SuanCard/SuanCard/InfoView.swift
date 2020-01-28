@@ -17,7 +17,7 @@ struct InfoView: View {
             .fill(Color.white).frame(height:50).overlay(HStack {
                 HStack {
                     Image(systemName: imageName).foregroundColor(.orange)
-                    Text(text)
+                    Text(text).foregroundColor(Color("Info Color"))
                 }
             }).padding(.all)
     }
@@ -26,6 +26,9 @@ struct InfoView: View {
 
 struct InfoView_Previews: PreviewProvider {
     static var previews: some View {
-        InfoView(text: "Hello", imageName: "phone.fill").previewLayout(.sizeThatFits)
+        Group {
+            InfoView(text: "Hello", imageName: "phone.fill").previewLayout(.sizeThatFits).colorScheme(.light)
+            InfoView(text: "Hello", imageName: "phone.fill").previewLayout(.sizeThatFits).colorScheme(.dark)
+        }
     }
 }
