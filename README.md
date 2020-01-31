@@ -20,6 +20,7 @@ Enjoy the whole days of holiday with learning something new.
 9. flash-chat (an chat application)
 10. SuanCard (Suan's Card)
 11. h4x0r-news (hacker news)
+12. todoey (learning local data persistance: using FileManager and Codeable)
 
 # NOTE
 ## Cool Tools for designing:
